@@ -1,0 +1,741 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000111
+<http://purl.obolibrary.org/obo/IAO_0000111> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000578
+<http://purl.obolibrary.org/obo/IAO_0000578> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0020000
+<http://purl.obolibrary.org/obo/IAO_0020000> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022000
+<http://purl.obolibrary.org/obo/IAO_0022000> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0020000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000122"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "postal codes are assigned by each country"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier issued by more than one authority"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "distributed identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022001
+<http://purl.obolibrary.org/obo/IAO_0022001> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0020000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000122"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "DOI have two parts, an identifier of the issuer, and then an identifier of the object as dubbed by the issuer"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier which has a centrally registered component and a locally administered component"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "two part identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022002
+<http://purl.obolibrary.org/obo/IAO_0022002> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0020000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000122"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "An internet protocol 4 number is assigned in parts."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An idenitifer whose parts are dubbed by multiple authorities"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "multi-part identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022003
+<http://purl.obolibrary.org/obo/IAO_0022003> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "The CrossRef ID for the University of Florida is 100007698.  When authors cite the univeristy as a funder of their work, CrossRef uses this number to identify the university"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned by CrossRef to an organization which has funded a project resulting in a published work"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "crossref funder identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022004
+<http://purl.obolibrary.org/obo/IAO_0022004> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "ASIN"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "do we need this"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number"@en ;
+                                             rdfs:label "amazon standard identification number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022005
+<http://purl.obolibrary.org/obo/IAO_0022005> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "CODEN"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A six character, alphanumeric bibliographic code, that provides concise, unique and unambiguous identification of the titles of periodicals and non-serial publications from all subject areas."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "from bibo"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/CODEN"@en ;
+                                             rdfs:label "coden"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022006
+<http://purl.obolibrary.org/obo/IAO_0022006> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "DBpedia URL"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "The DBpedia URL for the football player Cristiano Ronaldo is http://dbpedia.org/resource/Cristiano_Ronaldo"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A URL used by DBpedia to identify an entity"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "clarify"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://dbpedia.org"@en ;
+                                             rdfs:label "dbpedia identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022007
+<http://purl.obolibrary.org/obo/IAO_0022007> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "EAN-13"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "EAN-13 are commonly found on the wrapping of a package of a good bought in a store."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A 13 digit number, often encoded into bar codes for the purpose of identifying an entity item for sale"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "do we need this"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.gs1.org/sites/default/files/docs/barcodes/GS1_General_Specifications.pdf"@en ;
+                                             rdfs:label "european article numbering-uniform code council 13"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022008
+<http://purl.obolibrary.org/obo/IAO_0022008> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "eISSN"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "The eISSN of the journal PLOS One is 1932-6203"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The e-ISSN (or eISSN) is a standard label for \"Electronic ISSN\", the ISSN for the electronic media (online) version of a serial."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/International_Standard_Serial_Number#Electronic_ISSN"@en ;
+                                             rdfs:label "electronic international standard serial number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022009
+<http://purl.obolibrary.org/obo/IAO_0022009> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "eRA Commons ID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier used by the National Institues of Health in the United States to identify researchers for the purpose of research administration"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "Do we need this?"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://era.nih.gov/"@en ;
+                                             rdfs:label "eracommons identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022010
+<http://purl.obolibrary.org/obo/IAO_0022010> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "GRiD"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "The ISBN-13 for Native Son, by Richard Wright, Harper Perennial, Reissued 2005 is 978-0-06-083756-3"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned and managed by Digital Science for the purpose of denoting research organizations"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://grid.ac"@en ;
+                                             rdfs:label "global research organization identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022011
+<http://purl.obolibrary.org/obo/IAO_0022011> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The International Standard Book Number (ISBN 10) is a 10-digit numeric commercial book identifier which is intended to be unique.[a][b] Publishers purchase ISBNs from an affiliate of the International ISBN Agency."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/International_Standard_Book_Number"@en ;
+                                             rdfs:label "international standard book number 10"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022012
+<http://purl.obolibrary.org/obo/IAO_0022012> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The International Standard Book Number (ISBN 13) is a 13 digit numeric commercial book identifier which is intended to be unique.[a][b] Publishers purchase ISBNs from an affiliate of the International ISBN Agency."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/International_Standard_Book_Number"@en ;
+                                             rdfs:label "international standard book number 13"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022013
+<http://purl.obolibrary.org/obo/IAO_0022013> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "ResearcherID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned by Clarivate to researchers to associate them with their works"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "spell out"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/ResearcherID"@en ;
+                                             rdfs:label "isi researcher identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022014
+<http://purl.obolibrary.org/obo/IAO_0022014> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "ISNI"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier for persons and organizations which may be assigned by matching algorithms based on records provided by publishers"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "spell out"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://isni.org/page/what-is-isni/"@en ;
+                                             rdfs:label "international standard name identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022015
+<http://purl.obolibrary.org/obo/IAO_0022015> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An International Standard Serial Number (ISSN) is an eight-digit serial number used to uniquely identify a serial publication, such as a magazine.["@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "spell out"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/International_Standard_Serial_Number"@en ;
+                                             rdfs:label "International standard serial number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022016
+<http://purl.obolibrary.org/obo/IAO_0022016> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "LCCN"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The Library of Congress Control Number (LCCN) is a serially based system of numbering cataloged records in the Library of Congress, in the United States."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Library_of_Congress_Control_Number"@en ;
+                                             rdfs:label "library of congress control number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022017
+<http://purl.obolibrary.org/obo/IAO_0022017> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "NIHMSID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned by the National Institutes of Health during manuscript submission for compliance with NIH open access policies"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.nihms.nih.gov/login/?next=/submission/"@en ;
+                                             rdfs:label "nih manuscript id"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022018
+<http://purl.obolibrary.org/obo/IAO_0022018> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "OCN"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An OCLC number is a unique control number given to all bibliographic records in the WorldCat catalog."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "online computer library center control number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022019
+<http://purl.obolibrary.org/obo/IAO_0022019> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "ORCID ID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Open Researcher and Contributor ID is an alphanumeric code (ORCID iD) to uniquely identify authors and contributors of scholarly communication"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/ORCID"@en ;
+                                             rdfs:label "open researcher and contributor identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022020
+<http://purl.obolibrary.org/obo/IAO_0022020> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The PMCID (PubMed Central identifier), also known as the PMC reference number, is a bibliographic identifier for the PubMed Central database, much like the PMID is the bibliographic identifier for the PubMed database."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/PubMed_Central"@en ;
+                                             rdfs:label "pubmed central identification number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022021
+<http://purl.obolibrary.org/obo/IAO_0022021> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ,
+                                                                                          "pmid"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A PMID (PubMed identifier or PubMed unique identifier) is a unique integer value, starting at 1, assigned to each PubMed record."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/PubMed#PubMed_identifier"@en ;
+                                             rdfs:label "pubmed identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022022
+<http://purl.obolibrary.org/obo/IAO_0022022> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "ROR ID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned by ROR to research organizations in the world"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "http://ror.org"@en ;
+                                             rdfs:label "research organization registry identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022023
+<http://purl.obolibrary.org/obo/IAO_0022023> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The Scopus Author Identifier distinguishes among similar names by assigning each author in Scopus a unique number and grouping all of the documents written by that author."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://service.elsevier.com/app/answers/detail/a_id/11212/supporthub/scopus/"@en ;
+                                             rdfs:label "scopus author identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022024
+<http://purl.obolibrary.org/obo/IAO_0022024> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "SICI"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The Serial Item and Contribution Identifier (SICI) was a code (ANSI/NISO standard Z39.56-1996 [R2002]) used to uniquely identify specific volumes, articles or other identifiable parts of a serial."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "withdrawn"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Serial_Item_and_Contribution_Identifier"@en ;
+                                             rdfs:label "serial item and contribution identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022025
+<http://purl.obolibrary.org/obo/IAO_0022025> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "UPC"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The Universal Product Code (UPC; redundantly: UPC code) is a barcode symbology that is widely used in the United States, Canada, Europe, Australia, New Zealand, and other countries for tracking trade items in stores."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "do we need this?"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Universal_Product_Code"@en ;
+                                             rdfs:label "universal product code"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022026
+<http://purl.obolibrary.org/obo/IAO_0022026> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ,
+                                                                                          "patent number"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A patent number is an identifier assigned by a patent office and is used often in a patent search. The format depends on the issuing office, the type of patent, and when the patent was issued."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "find better definition"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.upcounsel.com/patent-number"@en ;
+                                             rdfs:label "united states patent number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022027
+<http://purl.obolibrary.org/obo/IAO_0022027> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "QID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "QID (or Q number) is the unique identifier of a data item on Wikidata, comprising the letter \"Q\" followed by one or more digits."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.wikidata.org/wiki/Q43649390"@en ;
+                                             rdfs:label "wikidata q number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022028
+<http://purl.obolibrary.org/obo/IAO_0022028> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned to the license issued to a person who has been qualified to drive a vehicle by an authority"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "do we need this?"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "drivers license number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022029
+<http://purl.obolibrary.org/obo/IAO_0022029> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "In the US, the National Provider Identifier (NPI) is a health care provider ID"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier issued to a person as a result of their being licensed as a health care provider by an authority"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "do we need this?"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "health care provider identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022030
+<http://purl.obolibrary.org/obo/IAO_0022030> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned to an award by an organizaton which received it"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "local award identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022031
+<http://purl.obolibrary.org/obo/IAO_0022031> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned to a grant by the organization which was awarded the grant"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "local grant identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022032
+<http://purl.obolibrary.org/obo/IAO_0022032> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned by an organization to one of its projects"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "local project identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022033
+<http://purl.obolibrary.org/obo/IAO_0022033> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned by an organization to a person affiliated with the organization"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "local person identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022034
+<http://purl.obolibrary.org/obo/IAO_0022034> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned to an ice by a repository in which it is held"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "local information content entity identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022035
+<http://purl.obolibrary.org/obo/IAO_0022035> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ,
+                                                                                          "passport number"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier issued by a national authority to a passport document intended to associate that document with a specific human being"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "do we need this?"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "passport number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022036
+<http://purl.obolibrary.org/obo/IAO_0022036> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier assigned to a report.  From the BIBO ontology."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "do we need this?  Does not appear to be in the current BIBO ontology."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "report identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022037
+<http://purl.obolibrary.org/obo/IAO_0022037> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identfier assigned to an award by its sponsor"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "sponsor award identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022038
+<http://purl.obolibrary.org/obo/IAO_0022038> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022002> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "IP address"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An Internet Protocol address (IP address) is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "do we need this?"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/IP_address"@en ;
+                                             rdfs:label "internet protocol address"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022039
+<http://purl.obolibrary.org/obo/IAO_0022039> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022002> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "MAC address"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A media access control address (MAC address) is a unique identifier assigned to a network interface controller (NIC) for use as a network address in communications within a network segment."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "do we need this?"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/MAC_address"@en ;
+                                             rdfs:label "media access control address"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022040
+<http://purl.obolibrary.org/obo/IAO_0022040> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022042> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "ARK"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An Archival Resource Key (ARK) is a Uniform Resource Identifier (URI)[1] that is a multi-purpose persistent identifier for information objects of any type."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Archival_Resource_Key"@en ;
+                                             rdfs:label "archival resource key"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022041
+<http://purl.obolibrary.org/obo/IAO_0022041> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022001> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "DOI"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A digital object identifier (DOI) is a persistent identifier or handle used to identify objects uniquely, standardized by the International Organization for Standardization (ISO)."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Digital_object_identifier"@en ;
+                                             rdfs:label "digital object identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022042
+<http://purl.obolibrary.org/obo/IAO_0022042> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022044> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "URI"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A Uniform Resource Identifier (URI) is a unique sequence of characters that identifies a logical or physical resource used by web technologies."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Uniform_Resource_Identifier"@en ;
+                                             rdfs:label "uniform resource identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022043
+<http://purl.obolibrary.org/obo/IAO_0022043> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022042> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "URL"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A Uniform Resource Locator (URL), colloquially termed a web address,[1] is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. A URL is a specific type of Uniform Resource Identifier (URI),[2][3] although many people use the two terms interchangeably."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/URL"@en ;
+                                             rdfs:label "uniform resource locator"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022044
+<http://purl.obolibrary.org/obo/IAO_0022044> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022001> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "IRI"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "The IRI https://en.wiktionary.org/wiki/_____ (Ancient Greek) can be resolved to a URI https://en.wiktionary.org/wiki/%E1%BF%AC%CF%8C%CE%B4%CE%BF%CF%82 which is a URL (identifies a location on the web)"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The Internationalized Resource Identifier (IRI) is an internet protocol standard which builds on the Uniform Resource Identifier (URI) protocol by greatly expanding the set of permitted characters."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier"@en ;
+                                             rdfs:label "internationalized resource identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022045
+<http://purl.obolibrary.org/obo/IAO_0022045> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "In libraries, art galleries, museums and archives, an accession number is a unique identifier assigned to, and achieving initial control of, each acquisition. Assignment of accession numbers typically occurs at the point of accessioning or cataloging."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Accession_number_%28library_science%29"@en ;
+                                             rdfs:label "accession number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022046
+<http://purl.obolibrary.org/obo/IAO_0022046> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022001> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The Handle System is the Corporation for National Research Initiatives's proprietary registry assigning persistent identifiers, or handles, to information resources, and for resolving \"those handles into the information necessary to locate, access, and otherwise make use of the resources\""@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "How to represent handles as URL?  Same question fro DOI.  Is this a quality of the identifier?"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Handle_System"@en ;
+                                             rdfs:label "handle"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022047
+<http://purl.obolibrary.org/obo/IAO_0022047> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022042> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "URN"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A Uniform Resource Name (URN) is a Uniform Resource Identifier (URI) that uses the urn scheme. URNs are globally unique persistent identifiers assigned within defined namespaces so they will be available for a long period of time, even after the resource which they identify ceases to exist or becomes unavailable."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Uniform_Resource_Name"@en ;
+                                             rdfs:label "uniform resource name"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022048
+<http://purl.obolibrary.org/obo/IAO_0022048> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "Scopus EID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A unique academic work identifier assigned in the scopus bibliographic database"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.wikidata.org/wiki/Property:P1154"@en ;
+                                             rdfs:label "scopus eid"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022049
+<http://purl.obolibrary.org/obo/IAO_0022049> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "WoS UID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A unique academic work identifier assigned in the web of science bibliographic database"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "web of science uniform identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022050
+<http://purl.obolibrary.org/obo/IAO_0022050> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A unique academic work identifier assigned in the arxiv bibliographic database"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://arxiv.org/help/arxiv_identifier"@en ;
+                                             rdfs:label "arxiv identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022051
+<http://purl.obolibrary.org/obo/IAO_0022051> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The bibcode (also known as the refcode) is a compact identifier used by several astronomical data systems to uniquely specify literature references."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Bibcode"@en ;
+                                             rdfs:label "bibcode"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022052
+<http://purl.obolibrary.org/obo/IAO_0022052> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_002243> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "PURL"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A persistent uniform resource locator (PURL) is a uniform resource locator (URL) (i.e., location-based uniform resource identifier or URI) that is used to redirect to the location of the requested web resource."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator"@en ;
+                                             rdfs:label "purl"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022053
+<http://purl.obolibrary.org/obo/IAO_0022053> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "OCI"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The Open Citation Identifier (OCI) is a globally unique persistent identifier for bibliographic citations, created and maintained by OpenCitations, and this page provides a resolution service that takes an OCI and returns information about that citation."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://opencitations.net/oci"@en ;
+                                             rdfs:label "open citation identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022054
+<http://purl.obolibrary.org/obo/IAO_0022054> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "DAI"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "In the Dutch research system, the Digital Author Identifier (DAI) system assigns a unique number to all academic authors as a form of authority control."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Digital_Author_Identifier"@en ;
+                                             rdfs:label "digital author identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022055
+<http://purl.obolibrary.org/obo/IAO_0022055> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "VIAF"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The Virtual International Authority File (VIAF) is an international authority file. It is a joint project of several national libraries and operated by the Online Computer Library Center (OCLC)"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             rdfs:label "virtual international authority file identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022056
+<http://purl.obolibrary.org/obo/IAO_0022056> rdf:type owl:Class ;
+                                             rdfs:subClassOf <id:000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "OpenID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "OpenID is an open standard and decentralized authentication protocol."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/OpenID"@en ;
+                                             rdfs:label "open identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022057
+<http://purl.obolibrary.org/obo/IAO_0022057> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "Ringgold ID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The Ringgold Identifier is a unique numerical identifier applied to organizations in the scholarly supply chain"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.ringgold.com/ringgold-identifier/"@en ;
+                                             rdfs:label "ringgold identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022058
+<http://purl.obolibrary.org/obo/IAO_0022058> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022046> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "RAiD"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "RAiD is a Persistent IDentifier for research projects organized by the Australian Research Data Commons"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.raid.org.au/"@en ;
+                                             rdfs:label "research activity identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022059
+<http://purl.obolibrary.org/obo/IAO_0022059> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022043> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "gist id"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A gist is a shareable file with a unique, peristent URL that you can edit, clone, and fork on GitHub. The gist URL is its identifier."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://docs.github.com/en/github/getting-started-with-github/github-glossary#gist"@en ;
+                                             rdfs:label "github gist identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022060
+<http://purl.obolibrary.org/obo/IAO_0022060> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "SHA-1"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "In cryptography, SHA-1 (Secure Hash Algorithm 1) is a cryptographic hash function which takes an input and produces a 160-bit (20-byte) hash value known as a message digest � typically rendered as a hexadecimal number, 40 digits long."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/SHA-1"@en ;
+                                             rdfs:label "secure hash algorithm-1 hash"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022061
+<http://purl.obolibrary.org/obo/IAO_0022061> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "RRID"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Research Resource Identifiers are ID numbers assigned to help researchers cite key resources (antibodies, model organisms and software projects) in the biomedical literature to improve transparency of research methods."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/International_Geo_Sample_Number"@en ;
+                                             rdfs:label "research resource identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022062
+<http://purl.obolibrary.org/obo/IAO_0022062> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0022046> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "IGSN"@en ,
+                                                                                          "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The International Geo Sample Number or IGSN is a sample identification code of typically nine characters."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Michael Conlon"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "The International Geo Sample Number or IGSN is a sample identification code of typically nine characters."@en ;
+                                             rdfs:label "international geo sample number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_002243
+<http://purl.obolibrary.org/obo/IAO_002243> rdf:type owl:Class .
+
+
+###  id:000
+<id:000> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi
